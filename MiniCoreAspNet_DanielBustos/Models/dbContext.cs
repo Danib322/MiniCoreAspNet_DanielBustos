@@ -12,6 +12,7 @@ namespace MiniCoreAspNet_DanielBustos.Models
         : base(options)
         {
         }
+        
         public DbSet<Pase> Pases { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
     }
