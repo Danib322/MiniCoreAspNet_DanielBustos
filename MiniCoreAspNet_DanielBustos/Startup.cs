@@ -26,7 +26,8 @@ namespace MiniCoreAspNet_DanielBustos
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            var connection = @"Server=MSI\SQLEXPRESS; Database=MiniCoreDBASPNet; Trusted_Connection=True;";
+            //var connection = @"Server=MSI\SQLEXPRESS; Database=MiniCoreDBASPNet; Trusted_Connection=True;";
+            var connection = "Data Source=SQL8003.site4now.net;Initial Catalog=db_a8e848_danib32;User Id=db_a8e848_danib32_admin;Password=admin123";
             services.AddDbContext<dbContext>(options =>
             options.UseSqlServer(connection));
         }
